@@ -15,6 +15,10 @@
     color: #fff;
 }
 
+.align-left {
+    text-align: left;
+}
+
 /* Navbar */
 .navbar {
     background-color: #2c3e50;
@@ -55,4 +59,37 @@
     width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+
+/* About */
+.about .jumbotron {
+    height: 100%;
+}
+
+.about .jumbotron .text-about {
+    padding-bottom: 10px;
+}
+
+.about .jumbotron .text-about p {
+    font-size: 20px;
+}
+
+.about .jumbotron .text-upper {
+    font-weight: 700;
+}
+
+.about .btn-primary {
+    background-color: #1abc9c;
+    border-color: #fff;
+    font-size: 20px;
+}
+
+.about .btn-primary i {
+    padding-right: 10px;
+}
+
+@media all and (max-width: 970px) {
+    .about .jumbotron .text-about p {
+        margin-right: 40px;
+    }
 }
