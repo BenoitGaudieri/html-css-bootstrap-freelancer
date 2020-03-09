@@ -47,17 +47,17 @@
         </nav>
 
         <!-- Jumbotron -->
-        <div class="jumbotron text-upper color-white text-center">
+        <section class="jumbotron text-upper color-white text-center">
             <img src="img/avatar.svg" alt="avatar">
             <h2>start bootstrap</h2>
             <div class="star"><i class="fas fa-star"></i></div>
             <p>graphic artist - web designer - illustrator</p>
-        </div>
+        </section>
     </header>
 
     <main>
         <!-- Portfolio -->
-        <div class="portfolio">
+        <section class="portfolio">
             <div class="container">
                 <!-- text row -->
                 <div class="row text-upper text-center">
@@ -68,31 +68,37 @@
                 </div>
                 <!-- img -->
                 <div class="row text-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/cabin.png" alt="">
+                    <div class="relative col-lg-4 col-md-6 col-sm-12">
+                        <img class="overlay" src="img/cabin.png" alt="">
+                        <div class="hidden-text">Click me!</div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/cake.png" alt="">
+                    <div class="relative col-lg-4 col-md-6 col-sm-12">
+                        <img class="overlay" src="img/cake.png" alt="">
+                        <div class="hidden-text">Click me!</div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/circus.png" alt="">
+                    <div class="relative col-lg-4 col-md-6 col-sm-12">
+                        <img class="overlay" src="img/circus.png" alt="">
+                        <div class="hidden-text">Click me!</div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/game.png" alt="">
+                    <div class="relative col-lg-4 col-md-6 col-sm-12">
+                        <img class="overlay" src="img/game.png" alt="">
+                        <div class="hidden-text">Click me!</div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/safe.png" alt="">
+                    <div class="relative col-lg-4 col-md-6 col-sm-12">
+                        <img class="overlay" src="img/safe.png" alt="">
+                        <div class="hidden-text">Click me!</div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/submarine.png" alt="">
+                    <div class="relative col-lg-4 col-md-6 col-sm-12">
+                        <img class="overlay" src="img/submarine.png" alt="">
+                        <div class="hidden-text">Click me!</div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
 
         <!-- About -->
-        <div class="about">
+        <section class="about">
             <div class="jumbotron color-white text-center">
                 <div class="container">
                     <div class="row">
@@ -121,10 +127,54 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- Contact -->
+        <section class="contact">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-3 col-sm-6">
+                        <h2 class="text-upper">contact me</h2>
+                        <div class="star"><i class="fas fa-star"></i></div>
+                        <div class="row align-left">
+                            <div class="col-lg-12">
+                                <!-- Form -->
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputFile">File input</label>
+                                        <input type="file" id="exampleInputFile">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Check me out
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
 
     <!-- Librerie JS -->
     <!-- JQuery -->
