@@ -49,3 +49,10 @@
 .jumbotron p {
     font-size: 25px;
 }
+
+/* Portfolio */
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
