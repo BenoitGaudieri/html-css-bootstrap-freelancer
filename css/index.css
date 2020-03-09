@@ -25,6 +25,8 @@
 
 .star {
     position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .star::before {
@@ -50,6 +52,16 @@
     background-color: #fff;
     border-radius: 4px;
 }
+
+/* .black-star::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 4px;
+    vertical-align: middle;
+    background-color: #000000;
+    border-radius: 4px;
+} */
 
 /* TODO: Black Star */
 
@@ -148,9 +160,66 @@
 
 /* Contact */
 .contact {
-    height: 500px;
+    max-height: 100%;
 }
 
+.contact form {
+    margin-bottom: 30px;
+}
+
+.contact .form-control {
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    box-shadow: none;
+}
+
+.contact label {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contact button {
+    margin-top: 15px;
+}
+
+.contact .btn-success {
+    background-color: #1abc9c;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+}
+
+footer a {
+    color: #1abc9c;
+}
+
+.main-footer {
+    height: 250px;
+    background-color: #3a546d;
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+.main-footer i {
+    padding: 20px;
+    border: #fff;
+    border-radius: 50%;
+}
+
+.main-footer h3 {
+    font-size: 25px;
+}
+
+.last-footer {
+    height: 100px;
+    background-color: #2c3e50;
+    padding-top: 50px;
+}
+
+/* Media queries */
 @media all and (max-width: 970px) {
     .about .jumbotron .text-about p {
         margin-right: 40px;
