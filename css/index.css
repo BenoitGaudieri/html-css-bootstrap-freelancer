@@ -154,22 +154,38 @@
 .portfolio img {
     width: 100%;
     border-radius: 10px;
+    opacity: 1;
+}
+
+.image-p {
+    width: 100%;
+}
+
+.card {
     margin-bottom: 30px;
 }
 
 .overlay {
-    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
     transition: .5s ease;
+    background-color: #1abc9c;
+    border-radius: 10px;
 }
 
 .hidden-text {
-    transition: .5s ease;
-    opacity: 0;
+    color: white;
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -179,10 +195,6 @@
 }
 
 .relative:hover .overlay {
-    opacity: 0.3;
-}
-
-.relative:hover .hidden-text {
     opacity: 1;
 }
 
