@@ -23,49 +23,50 @@
     position: relative;
 }
 
-.star {
-    position: relative;
+.bolded-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.star,
+.black-star {
     margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 40px;
 }
 
-.star::before {
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 4px;
-    top: 50%;
-    left: 43%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 4px;
-}
-
+.star::before,
 .star::after {
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 4px;
-    top: 50%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 4px;
-}
-
-/* .black-star::before {
     content: "";
     display: inline-block;
-    width: 10%;
+    width: 18%;
+    height: 4px;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 25px;
+}
+
+.black-star::before,
+.black-star::after {
+    content: "";
+    display: inline-block;
+    width: 18%;
     height: 4px;
     vertical-align: middle;
     background-color: #000000;
     border-radius: 4px;
-} */
+    margin: 25px;
+}
 
-/* TODO: Black Star */
-
-/* Navbar */
+/* 
+  _   _             _                
+ | \ | | __ ___   _| |__   __ _ _ __ 
+ |  \| |/ _` \ \ / / '_ \ / _` | '__|
+ | |\  | (_| |\ V /| |_) | (_| | |   
+ |_| \_|\__,_| \_/ |_.__/ \__,_|_|   
+                                      
+*/
 .navbar {
     background-color: #2c3e50;
     height: 90px;
@@ -82,10 +83,17 @@
     color: #fff;
 }
 
-/* Jumbotron */
+/* 
+      _                 _           _                   
+     | |_   _ _ __ ___ | |__   ___ | |_ _ __ ___  _ __  
+  _  | | | | | '_ ` _ \| '_ \ / _ \| __| '__/ _ \| '_ \ 
+ | |_| | |_| | | | | | | |_) | (_) | |_| | | (_) | | | |
+  \___/ \__,_|_| |_| |_|_.__/ \___/ \__|_|  \___/|_| |_|
+                                                         
+*/
 .jumbotron {
     background-color: #1abc9c;
-    height: 590px;
+    height: 100%;
 }
 
 .jumbotron img {
@@ -100,7 +108,14 @@
     font-size: 25px;
 }
 
-/* Portfolio */
+/* 
+  ____            _    __       _ _       
+ |  _ \ ___  _ __| |_ / _| ___ | (_) ___  
+ | |_) / _ \| '__| __| |_ / _ \| | |/ _ \ 
+ |  __/ (_) | |  | |_|  _| (_) | | | (_) |
+ |_|   \___/|_|   \__|_|  \___/|_|_|\___/ 
+                                           
+*/
 .portfolio img {
     width: 100%;
     border-radius: 10px;
@@ -123,6 +138,11 @@
     text-align: center;
 }
 
+.hidden-text i {
+    color: #000;
+    font-size: 50px;
+}
+
 .relative:hover .overlay {
     opacity: 0.3;
 }
@@ -131,7 +151,14 @@
     opacity: 1;
 }
 
-/* About */
+/* 
+     _    _                 _   
+    / \  | |__   ___  _   _| |_ 
+   / _ \ | '_ \ / _ \| | | | __|
+  / ___ \| |_) | (_) | |_| | |_ 
+ /_/   \_\_.__/ \___/ \__,_|\__|
+                                 
+*/
 .about .jumbotron {
     height: 100%;
 }
@@ -158,7 +185,14 @@
     padding-right: 10px;
 }
 
-/* Contact */
+/* 
+   ____            _             _   
+  / ___|___  _ __ | |_ __ _  ___| |_ 
+ | |   / _ \| '_ \| __/ _` |/ __| __|
+ | |__| (_) | | | | || (_| | (__| |_ 
+  \____\___/|_| |_|\__\__,_|\___|\__|
+                                      
+*/
 .contact {
     max-height: 100%;
 }
@@ -188,7 +222,14 @@
     font-size: 18px;
 }
 
-/* Footer */
+/* 
+  _____           _            
+ |  ___|__   ___ | |_ ___ _ __ 
+ | |_ / _ \ / _ \| __/ _ \ '__|
+ |  _| (_) | (_) | ||  __/ |   
+ |_|  \___/ \___/ \__\___|_|   
+                                
+*/
 footer {
     color: #fff;
 }
@@ -198,16 +239,17 @@ footer a {
 }
 
 .main-footer {
-    height: 250px;
+    height: 100%;
     background-color: #3a546d;
     padding-top: 60px;
+    padding-bottom: 40px;
     font-size: 20px;
 }
 
 .main-footer i {
     padding: 25px;
     border: 1px solid #fff;
-    border-radius: 50%;
+    border-radius: 60px;
     font-size: 20px;
 }
 
@@ -216,7 +258,7 @@ footer a {
 }
 
 .last-footer {
-    height: 100px;
+    max-height: 100%;
     background-color: #2c3e50;
     padding-top: 50px;
 }
